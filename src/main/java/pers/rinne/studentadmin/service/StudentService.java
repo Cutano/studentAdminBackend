@@ -14,13 +14,6 @@ public class StudentService {
     private StudentMapper studentMapper;
 
     /*
-     * 根据id查询用户
-     */
-    public Student select(int id){
-        return studentMapper.select(id);
-    }
-
-    /*
      * 查询所有用户
      */
     public List<Student> studentList(){

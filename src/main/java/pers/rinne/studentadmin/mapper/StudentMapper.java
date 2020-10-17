@@ -5,10 +5,6 @@ import pers.rinne.studentadmin.bean.Student;
 import java.util.List;
 
 public interface StudentMapper {
-    /*
-     * 根据id查询
-     */
-    Student select(int id);
 
     /*
      * 查询所有
@@ -18,7 +14,7 @@ public interface StudentMapper {
     /*
      * 增加保存
      */
-    void save(Student user);
+    void save(Student student);
 
     /*
      * 根据id删除
@@ -43,5 +39,5 @@ public interface StudentMapper {
     /*
      * 更改信息
      */
-    int update(Student user);
+    int update(Student student);
 }
