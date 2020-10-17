@@ -3,7 +3,7 @@
 <mapper namespace="pers.rinne.studentadmin.mapper.TeacherMapper">
 
     <!--查询所有用户-->
-    <select id="studentList" resultType="pers.rinne.studentadmin.bean.Teacher">
+    <select id="teacherList" resultType="pers.rinne.studentadmin.bean.Teacher">
         select * from teacher_info
     </select>
 

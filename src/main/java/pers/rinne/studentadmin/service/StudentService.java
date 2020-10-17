@@ -23,15 +23,15 @@ public class StudentService {
     /*
      * 查询所有用户
      */
-    public List<Student> userList(){
+    public List<Student> studentList(){
         return studentMapper.studentList();
     }
 
     /*
      * 增加保存用户
      */
-    public void save(Student user){
-        studentMapper.save(user);
+    public void save(Student student){
+        studentMapper.save(student);
     }
 
     /*
@@ -58,7 +58,7 @@ public class StudentService {
     /*
      * 更改用户信息
      */
-    public int update(Student user){
-        return studentMapper.update(user);
+    public int update(Student student){
+        return studentMapper.update(student);
     }
 }
