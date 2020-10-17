@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://rinne.top:3306/student_admin
+    url: jdbc:mysql://rinne.top:3306/student_admin?useUnicode=true&characterEncoding=UTF-8
     username: student_admin
     password: 12345aaaa
     driver-class-name: com.mysql.cj.jdbc.Driver

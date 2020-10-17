@@ -23,7 +23,7 @@ public class TeacherService {
     /*
      * 查询所有用户
      */
-    public List<Teacher> userList(){
+    public List<Teacher> teacherList(){
         return teacherMapper.teacherList();
     }
 
