@@ -23,7 +23,12 @@ public interface StudentMapper {
     /*
      * 根据id删除
      */
-    int delete(Integer id);
+    int deleteStudentById(Integer id);
+
+    /*
+     * 根据id删除
+     */
+    int deleteStudentByName(String name);
 
     /*
      * 根据id查找

@@ -26,4 +26,21 @@ public class TeacherController {
     public List<Teacher> listAllTeachers() {
         return teacherService.teacherList();
     }
+
+    @RequestMapping("/teacher/add")
+    public void addTeacher(@RequestParam(value = "name") String name, @RequestParam(value = "sex") String sex) {
+        teacherService.save(new Teacher(name, sex));
+    }
+
+    @RequestMapping("/teacher/del")
+    public int deleteTeacher(@RequestParam(value = "id", required = false) Integer id, @RequestParam(value = "name", required = false) String name) {
+        if (name != null) {
+            return teacherService.deleteTeacherByName(name);
+        } else return teacherService.deleteTeacherById(id);
+    }
+
+    @RequestMapping("/teacher/update")
+    public void updateTeacher(@RequestParam(value = "id") int id, @RequestParam(value = "name") String name, @RequestParam(value = "sex") String sex) {
+        teacherService.update(new Teacher(id, name, sex));
+    }
 }

@@ -7,6 +7,20 @@ public abstract class Person {
 
     protected String sex;
 
+    public Person() {
+    }
+
+    public Person(int id, String name, String sex) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+    }
+
+    public Person(String name, String sex) {
+        this.name = name;
+        this.sex = sex;
+    }
+
     public int getId() {
         return id;
     }

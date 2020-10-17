@@ -13,8 +13,13 @@
     </insert>
 
     <!--删除用户-->
-    <delete id="delete" parameterType="int">
+    <delete id="deleteStudentById" parameterType="int">
         delete from stu_info where id = #{id}
+    </delete>
+
+    <!--删除用户-->
+    <delete id="deleteStudentByName" parameterType="string">
+        delete from stu_info where name = #{name}
     </delete>
 
     <!--根据id查询用户-->

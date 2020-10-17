@@ -37,8 +37,15 @@ public class TeacherService {
     /*
      * 根据id删除用户
      */
-    public int delete(Integer id){
-        return teacherMapper.delete(id);
+    public int deleteTeacherById(Integer id){
+        return teacherMapper.deleteTeacherById(id);
+    }
+
+    /*
+     * 根据name删除用户
+     */
+    public int deleteTeacherByName(String name){
+        return teacherMapper.deleteTeacherByName(name);
     }
 
     /*
