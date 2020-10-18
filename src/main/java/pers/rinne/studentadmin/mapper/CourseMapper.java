@@ -24,22 +24,22 @@ public interface CourseMapper {
     /*
      * 根据选课id查找
      */
-    Course findCourseById(int linkId);
+    List<Course> findCourseById(int linkId);
 
     /*
      * 根据学生id查找
      */
-    Course findCourseByStudentId(int studentId);
+    List<Course> findCourseByStudentId(int studentId);
 
     /*
      * 根据教师id查找
      */
-    Course findCourseByTeacherId(int teacherId);
+    List<Course> findCourseByTeacherId(int teacherId);
 
     /*
      * 根据课程id查找
      */
-    Course findCourseByCourseId(int linkId);
+    List<Course> findCourseByCourseId(int linkId);
 
     /*
      * 更改信息

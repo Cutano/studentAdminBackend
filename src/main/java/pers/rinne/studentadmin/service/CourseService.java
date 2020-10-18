@@ -38,28 +38,28 @@ public class CourseService {
     /*
      * 根据选课id查找
      */
-    public Course findCourseById(int linkId) {
+    public List<Course> findCourseById(int linkId) {
         return courseMapper.findCourseById(linkId);
     }
 
     /*
      * 根据学生id查找
      */
-    public Course findCourseByStudentId(int studentId) {
+    public List<Course> findCourseByStudentId(int studentId) {
         return courseMapper.findCourseByStudentId(studentId);
     }
 
     /*
      * 根据教师id查找
      */
-    public Course findCourseByTeacherId(int teacherId) {
+    public List<Course> findCourseByTeacherId(int teacherId) {
         return courseMapper.findCourseByTeacherId(teacherId);
     }
 
     /*
      * 根据课程id查找
      */
-    public Course findCourseByCourseId(int courseId) {
+    public List<Course> findCourseByCourseId(int courseId) {
         return courseMapper.findCourseByCourseId(courseId);
     }
 

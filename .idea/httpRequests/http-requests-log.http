@@ -1,0 +1,78 @@
+GET http://localhost:16384/course?linkId=2
+
+<> 2020-10-18T081135.200.json
+
+###
+
+GET http://localhost:16384/course?studentId=10001
+
+<> 2020-10-18T081120.200.json
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+<> 2020-10-17T112107.200.json
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+###
+
+GET http://localhost:16384/teacher?id=20003
+
+<> 2020-10-17T111208.200.json
+
+###
+
+GET http://localhost:16384/teacher?id=20008
+
+###
+
+GET http://localhost:16384/teacher?id=20002
+
+<> 2020-10-17T111153.200.json
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+<> 2020-10-17T110936.500.json
+
+###
+
+GET http://localhost:16384/teacher?id=20003
+
+<> 2020-10-17T101315.200.json
+
+###
+
+GET http://localhost:16384/teacher?name=王老五
+
+<> 2020-10-17T101248.400.json
+
+###
+
+GET http://localhost:16384/teacher/list
+
+<> 2020-10-17T101154.200.json
+
+###
+

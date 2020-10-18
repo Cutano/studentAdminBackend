@@ -22,21 +22,13 @@ public class CourseController {
                                    @RequestParam(value = "teacherId", required = false) Integer teacherId,
                                    @RequestParam(value = "courseId", required = false) Integer courseId) {
         if (linkId != null) {
-            return new LinkedList<>() {{
-                add(courseService.findCourseById(linkId));
-            }};
+            return courseService.findCourseById(linkId);
         } else if (studentId != null) {
-            return new LinkedList<>() {{
-                add(courseService.findCourseByStudentId(studentId));
-            }};
+            return courseService.findCourseByStudentId(studentId);
         } else if (teacherId != null) {
-            return new LinkedList<>() {{
-                add(courseService.findCourseByTeacherId(teacherId));
-            }};
+            return courseService.findCourseByTeacherId(teacherId);
         } else if (courseId != null) {
-            return new LinkedList<>() {{
-                add(courseService.findCourseByCourseId(courseId));
-            }};
+            return courseService.findCourseByCourseId(courseId);
         } else return new LinkedList<>();
     }
 
