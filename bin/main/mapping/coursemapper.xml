@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.rinne.studentadmin.mapper.CourseMapper">
+
+    <!--查询所有选课-->
+    <select id="courseList" resultType="pers.rinne.studentadmin.bean.Course">
+        select * from stu_course
+    </select>
+
+    <!--添加选课-->
+    <insert id="save" parameterType="pers.rinne.studentadmin.bean.Course">
+        INSERT INTO stu_course VALUES(null,#{stu_id},#{course_id},#{course_name},#{teacher_id},#{grade})
+    </insert>
+
+    <!--删除选课-->
+    <delete id="delete" parameterType="int">
+        delete from stu_course where link_id = #{link_id}
+    </delete>
+
+    <!--根据link_id查询选课-->
+    <select id="findCourseById" resultType="pers.rinne.studentadmin.bean.Course">
+        select * from stu_course where link_id = #{link_id}
+    </select>
+
+    <!--根据学生id查询选课-->
+    <select id="findCourseByStudentId" resultType="pers.rinne.studentadmin.bean.Course">
+        select * from stu_course where stu_id = #{stu_id}
+    </select>
+
+    <!--根据教师id查询选课-->
+    <select id="findCourseByTeacherId" resultType="pers.rinne.studentadmin.bean.Course">
+        select * from stu_course where teacher_id = #{teacher_id}
+    </select>
+
+    <!--根据课程id查询选课-->
+    <select id="findCourseByCourseId" resultType="pers.rinne.studentadmin.bean.Course">
+        select * from stu_course where course_id = #{course_id}
+    </select>
+
+    <!--更改选课信息-->
+    <update id="update" parameterType="pers.rinne.studentadmin.bean.Course">
+        update stu_course set stu_id=#{stu_id},course_id=#{course_id},course_name=#{course_name},teacher_id=#{teacher_id},grade=#{grade} where link_id=#{link_id}
+    </update>
+
+</mapper>
